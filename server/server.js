@@ -8,7 +8,7 @@ const fs = require('fs');
 const path = require('path');
 const jwt = require('jsonwebtoken'); // Εισαγωγή της βιβλιοθήκης JWT
 
-const SECRET_KEY = "my_super_secret_key"; // Το κλειδί για την υπογραφή των tokens
+const SECRET_KEY = "89b52ba47e60b1a8071391c2435efd5f"; // Το κλειδί για την υπογραφή των tokens
 
 // Σωστό μονοπάτι για τα στατικά αρχεία (HTML, CSS, JS)
 app.use(express.static(path.join(__dirname, '../public')));
