@@ -72,10 +72,7 @@ function verifyToken(req, res, next) {
     });
 }
 
-const PORT = 3000;
-app.listen(PORT, () => {
-    console.log(` Ο Server ξεκίνησε στο http://localhost:3000`);
-});
+
 
 // Endpoint για προσθήκη δεδομένων (με έλεγχο Token)
 app.post('/api/add/:type', verifyToken, (req, res) => {
@@ -157,3 +154,6 @@ app.get('/api/athlete-info', (req, res) => {
         res.json(JSON.parse(data));
     });
 });
+
+// Vercel
+module.exports = app;
